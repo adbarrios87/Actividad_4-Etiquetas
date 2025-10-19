@@ -104,7 +104,7 @@ table{
     width: 95%;
     margin: 20px auto;
     font-family: georgia, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     
 }
 table thead{
@@ -112,7 +112,7 @@ background-color: #15297e;
 color: #fff;
 }
 table tbody tr:nth-child(odd){ /* filas impares */
-    background-color: #fbe3e3;
+    background-color: #bfd1ebea;
 }
 table tbody tr:nth-child(even){ /* filas pares */
     background-color: #d9d9d9;
@@ -122,4 +122,38 @@ table caption{
     font-size: 30px;
     font-weight: bold;
     color:#a55e2e;
+}
+table td img {
+    display: block;
+    margin: 0 auto;
+}
+table th:last-child,
+table td:last-child {
+    width: 250px; 
+}
+table td audio {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: 0 auto; 
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+table td img,
+table td object, table td video, table td iframe, input, select, progress {
+    display: block;
+    margin: 0 auto;
+}
+table td button {
+    display: block;          
+    margin: 12px auto;       
+    padding: 12px 28px;      
+    font-size: 18px;         
+    border-radius: 6px;     
+    border: 1px solid #666;  
+    background-color: #ff8d00;
+    color: #fff;             
+    cursor: pointer;
 }

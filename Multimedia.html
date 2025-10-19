@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Etiquetas" content="Actividad Etiquetas">
+    <meta name="Author" content="Adriana Barrios">
+    <link href ="src/css/tema.css" rel="stylesheet" media="screen" />
+    <title>Lista de Etiquetas</title>
+</head>
+<body>
+    <main>    
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de Etiquetas</h1>
+        </header>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="Index.html">Estructurales</a></li>
+                <li><a class="activo" href="Multimedia.html">Multimedia</a></li>
+                <li><a href="Control.html">Control</a></li>           
+            </ul>
+        </nav>
+        
+        <div id="contenedor_principal">
+            <!--Estructura de la tabla-->
+            <table>
+                <caption>Etiquetas Multimedia</caption>
+                <thead> <!--Encabezado de la tabla-->
+                    <tr>
+                        <th>Etiqueta</th><!--Columna de la tabla en la tabla-->
+                        <th>Descripción</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody><!--Cuerpo de la tabla-->
+                    <tr>
+                        <td>&#60img> </td>
+                        <td>Permite agregar imágenes a una páquina web. No necesita cierre y contiene todos los datos en una sola línea</td>
+                        <td><b>src:</b> indica la ubicación de la imagen que se puede dar en una ruta absoluta o relativa<br>
+                            <b>alt:</b> es una descripción textual de la imagen<br>
+                            <b>width y height:</b> permiten definir el tamaño de la imagen en ancho y alto, con valores en px o % del contenedor<br>
+                            <b>title:</b> da información adicional sobre la imagen <br>
+                            <b>srcset:</b> permite definir diferentes versiones de la misma imagen para diferentes resoluciones.</td>
+                        <td><img src="https://pngimg.com/uploads/frozen/frozen_PNG76.png" width=50%  title="Frozen">
+                            <br> &#60img src="https://pngimg.com/uploads/frozen/frozen_PNG76.png" width=50%  title="Frozen"></td>
+                    </tr>
+                    <tr>
+                        <td>&#60audio> </td>
+                        <td>Permite mostrar un reproductor de audio en el navegador, permitiendo al usuario reproducir, detener, avanzar y retroceder el audio</td>
+                        <td>
+                            <b>src:</b> indica la ubicación del archivo de audio que se reproducirá<br> 
+                            <b>controls:</b> muestra los controles de reproducción del reproductor de audio<br>
+                            <b>autoplay:</b> hace que el audio se reproduzca automáticamente al cargar la página<br>
+                            <b>loop:</b> hace que el audio se repita automáticamente una vez que termina<br>
+                        </td>
+                        <td>
+                            <audio src="src/assets/frozen.mp3" controls></audio><br>
+                            <br>&#60audio src="src/assets/frozen.mp3" controls><br>&#60/audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&#60video> </td>
+                        <td>Se utiliza para insertar videos en una página web</td>
+                        <td>
+                            <b>src:</b> especifica la ruta de la fuente del video<br>
+                            <b>width y height: </b>especifica el tamaño del video<br>
+                            <b>controls:</b> define si se deben mostrar los controles del video<br>
+                            <b>autoplay:</b> define si el video debe reproducirse automáticamente<br>
+                            <b>loop:</b> define si el video debe reproducirse en bucle<br>
+                            <b>muted:</b> define si el video debe iniciar sin sonido<br>
+                            <b>poster:</b> especifica una imagen que se mostrará antes de reproducir el video<br>
+                            <b>preload:</b> especifica cómo se deben cargar los datos del video<br>
+                            <b>playsinline:</b> define si el video se reproducirá dentro del contenido o en una ventana emergente<br>
+                            <b>type:</b> especifica el tipo de formato del video</td>
+                        <td><video src="src/assets/Video.mp4" width="200" height="150" controls></video>
+                            <br>&#60video src="src/assets/Video.mp4" width="200" height="150" controls><br>&#60/video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&#60iframe> </td>
+                        <td>Se utiliza para insertar contenido de otra página web dentro de una página existente</td>
+                        <td><b>src:</b> especifica la ubicación de la página web que se va a insertar en la página actual <br>
+                            <b>sandbox:</b> proporciona restricciones para el contenido dentro del iframe <br>
+                            <b>name:</b><br> especifica el nombre del iframe, el cual se puede utilizar para hacer referencia a él desde otro lugar en la página web
+                            <b>seamless:</b> define si el borde y el scrollbar del iframe deben ser ocultos o no<br>
+                            <b>scrolling:</b> define si se mostrarán barras de desplazamiento en caso de que el contenido sea demasiado grande para el tamaño del iframe. Los valores posibles son “yes”, “no”, “auto”<br>
+                            <b>frameborder:</b> define si se mostrará un borde alrededor del iframe<br>
+                            <b>allowfullscreen:</b> define si el contenido del iframe se puede ver a pantalla completa<br>
+                        </td>
+                        <td><iframe src="https://www.youtube.com/embed/WeuCso35B3c" width="200" height="120" frameborder="0" allowfullscreen></iframe><br>
+                            <br> iframe src="https://www.youtube.com/embed/WeuCso35B3c" width="200" height="120" frameborder="0" allowfullscreen><br>&#60/iframe>
+                            <br>
+                            <b>En el ejemplo se diferencia con la etiqueta video al traer el mismo recurso de una fuente externa.</b></td>
+                    </tr>
+                    <tr>
+                        <td>&#60object> </td>
+                        <td>Se utiliza para insertar contenido multimedia en una página web, como videos, imágenes, sonidos, documentos PDF, entre otros</td>
+                        <td><b>data:</b>especifica la ubicación del archivo multimedia que se va a insertar en la página web <br>
+                            <b>type:</b> especifica el tipo de archivo multimedia que se está insertando. Puede ser:"image/png","image/jpeg" para imagenes;
+                             "text/html" para otro HTML; "application/pdf" para PDF; type="audio/mpeg" para audio o "video/mp4" para video <br>
+                            <b>class/id:</b> se utilizan para identificar y dar estilo al objeto con CSS <br>
+                            <b>name:</b> especifica un nombre único para el objeto<br>
+                            <b>standby:</b> especifica un mensaje de espera que se mostrará mientras se carga el objeto<br>
+                            <b>width y height: </b>especifica el tamaño del contenido multimedia
+                        </td>
+                        <td><object data="src/assets/EBOOK.pdf" type="application/pdf" width="150" height="200"></object>
+                            <br>&#60object data="src/assets/EBOOK.pdf" type="application/pdf" width="150" height="200"><br>&#60/object>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <footer id="fprincipal">
+            <div class="small"> Todos los derechos reservados por el SENA</div>
+        </footer>
+    </main>
+</body>
+</html>

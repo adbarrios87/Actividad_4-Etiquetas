@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Etiquetas" content="Actividad Etiquetas">
+    <meta name="Author" content="Adriana Barrios">
+    <link href ="src/css/tema.css" rel="stylesheet" media="screen" />
+    <title>Lista de Etiquetas</title>
+</head>
+<body>
+    <main>    
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de Etiquetas</h1>
+        </header>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="Index.html">Estructurales</a></li>
+                <li><a href="Multimedia.html">Multimedia</a></li>
+                <li><a class="activo" href="Control.html">Control</a></li>           
+            </ul>
+        </nav>
+        
+        <div id="contenedor_principal">
+            <!--Estructura de la tabla-->
+            <table>
+                <caption>Etiquetas de Control</caption>
+                <thead> <!--Encabezado de la tabla-->
+                    <tr>
+                        <th>Etiqueta</th><!--Columna de la tabla en la tabla-->
+                        <th>Descripción</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody><!--Cuerpo de la tabla-->
+                    <tr>
+                        <td>&#60input> </td>
+                        <td>Especifica un campo de entrada donde el usuario puede ingresar na amplia variedad de tipos de datos y formatos, como texto, números, fechas, contraseñas, casillas de verificación y botones de opción, entre otros</td>
+                        <td>
+                            <b>type:</b> se refiere al tipo de dato a ingresar, puede ser: texto, contraseña, checkbox, radio, number, email, date, file, submit, button, range, tel, entre otros. Cada campo tiene sus propias caracteristicas y puede personalizarse mediante la adición de atributos o estilos especificos<br>
+                            <b>name:</b> se utiliza para identificar un campo de entrada en particular<br>
+                            <b>value:</b> define el valor predeterminado de un campo de entrada<br>
+                            <b>placeholder:</b> muestra un texto de sugerencia en el campo de entrada cuando está vacío<br>
+                            <b>required:</b> indica que un campo de entrada es obligatorio y debe completarse antes de enviar el formulario<br>
+                            <b>disabled:</b> desactiva un campo de entrada, lo que significa que los usuarios no pueden interactuar con él ni modificar su valor<br>
+                            <b>readonly:</b> hace que un campo de entrada sea de solo lectura<br>
+                            <b>autocomplete:</b> permite al navegador completar automáticamente los campos de entrada con valores almacenados previamente por el usuario<br>
+                        </td>
+                        <td><input type="text" name= "nombre" placeholder= "ingrese su nombre"> <br>
+                            &#60input type="text" name= "nombre" placeholder= "ingrese su nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>&#60label> </td>
+                        <td>Eutilizada para asociar una descripción con un elemento de formulario específico</td>
+                        <td><b>for:</b> especifica el id del elemento de formulario al cual se está asociando la etiqueta<br>
+                            <b>class: </b>especifica una o varias clases para estilizar la etiqueta mediante CSS<br>
+                            <b>id: </b>especifica un identificador único para la etiqueta, que puede ser usado para estilizar la etiqueta mediante CSS <br>
+                            <b>title:</b> especifica un título o una descripción adicional para la etiquetad</td>
+                        <td><label for="color">Seleccione el color de su preferencia</label>
+                            <br><br>&#60label for="color">Seleccione el color de su preferencia<br>&#60/label></td>
+                    </tr>
+                    <tr>
+                        <td>&#60button> </td>
+                        <td>Es utilizada para crear un botón interactivo en una página web. El botón puede tener una etiqueta de texto dentro de él y puede ser usado para enviar datos a un servidor, llamar a una función JavaScript o simplemente como un enlace</td>
+                        <td>
+                            <b>type:</b> especifica el tipo de botón. Puede ser: submit,reset o button <br>
+                            <b>name:</b> especifica un nombre para el botón, que se utilizará para identificarlo en el lado del servidor cuando se envía el formulario. <br>
+                            <b>value:</b> especifica el valor que se enviará al servidor cuando se envía el formulario <br>
+                            <b>disabled:</b> define si el botón está deshabilitado o no <br>
+                            <b>form:</b> especifica a qué formulario pertenece el botón <br>
+                            <b>formaction:</b> especifica la URL a la cual se enviará el formulario cuando se presiona el botón <br>
+                            <b>formnovalidate:</b> define si el formulario debe ser enviado sin validar<br>
+                            <b>accesskey:</b> especifica una tecla de acceso para el botón <br>
+                        </td>
+                        <td><button type="submit" title="Enviar formulario" accesskey="entre">Submit</button>
+                            <br>&#60button type="submit" title="Enviar formulario" accesskey="entre">Submit&#60/button></td>
+                    </tr>
+                    <tr>
+                        <td>&#60select> </td>
+                        <td>Es utilizada para crear un menú desplegable, también conocido como “lista desplegable”</td>
+                        <td><b>disabled:</b> Este atributo deshabilita el control de selección para que el usuario no pueda interactuar con él<br>
+                            <b>form: </b>Este atributo especifica el formulario al que pertenece el control de selección<br>
+                            <b>multiple:</b> Este atributo permite seleccionar varias opciones al mismo tiempo<br>
+                            <b>name:</b> Este atributo especifica el nombre del control de selección, que se utiliza para enviar los datos del formulario<br>
+                            <b>required:</b> Este atributo especifica que el usuario debe seleccionar una opción antes de enviar el formulario<br>
+                            <b>size: </b>Este atributo especifica el número de opciones que se deben mostrar en el control de selección</td>
+                        <td>
+                                <select id="color" name="color">
+                                    <option value="amarillo">Amarillo</option>
+                                    <option value="azul">Azul</option>
+                                    <option value="rojo">Rojo</option>
+                                </select><br>
+                                &#60select id="color" name="color"><br>
+                                    &#60option value="amarillo">Amarillo&#60/option><br>
+                                    &#60option value="azul">Azul&#60/option><br>
+                                    &#60option value="rojo">Rojo&#60/option><br>
+                                &#60/select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>&#60progress> </td>
+                        <td>Se utiliza para mostrar el progreso de una tarea, ya sea en forma de barra de progreso o de un porcentaje</td>
+                        <td>
+                            <b>value:</b> indica el valor actual del progreso. El valor debe ser un número entero y no puede ser mayor que el valor especificado en el atributo max<br>
+                            <b>max:</b> indica el valor máximo del progreso. El valor debe ser un número entero<br>
+                            <b>form:</b> permite que la barra de progreso sea controlada por un formulario. El valor debe ser el ID del formulario al que se va a vincular la barra de progreso.<br>
+                            <b>id:</b> permite identificar de manera única el elemento 
+                        </td>
+                        <td><progress value="75" max="100"></progress>
+                        <br><br>&#60progress value="75" max="100"><br>&#60/progress></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <footer id="fprincipal">
+            <div class="small"> Todos los derechos reservados por el SENA</div>
+        </footer>
+    </main>
+</body>
+</html>

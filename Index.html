@@ -17,8 +17,8 @@
         <nav class="menu">
             <ul>
                 <li><a class="activo" href="Index.html">Estructurales</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="control.html">Control</a></li>           
+                <li><a href="Multimedia.html">Multimedia</a></li>
+                <li><a href="Control.html">Control</a></li>           
             </ul>
         </nav>
         
@@ -36,16 +36,66 @@
                 </thead>
                 <tbody><!--Cuerpo de la tabla-->
                     <tr>
-                        <td>&#60 a > </td>
-                        <td>Link</td>
-                        <td>Propiedades href</td>
-                        <td>...</td>
+                        <td>&#60 head > </td>
+                        <td>Contiene los metadatos del documento, información no visible para el usuario
+                            que describe la pagina y controla su comporamiento. </td>
+                        <td><b>tittle:</b> establece el título de la página web que se muestra en la pestaña del navegador<br>
+                            <b>meta:</b> proporciona información adicional sobre la página web y suele utilizarse para indicar el tipo de contenido, la codificación de caracteres, la descripción y otra información importantes<br>
+                            <b>style:</b> define estilos CSS directamente en el documento HTML, puede ser útil para estilos específicos que afectan a elementos puntuales<br>
+                            <b>base:</b> establece una URL base para todos los enlaces relativos de la página. Esto permite simplificar las rutas a archivos u otras páginas<br>
+                        </td>
+                        <td> &#60head> <br>
+                            &#60meta name="Etiquetas" content="Actividad Etiquetas">
+                            &#60/head> <br> 
+                        </td>
                     </tr>
                     <tr>
-                        <td>&#60 dic > </td>
-                        <td>div</td>
-                        <td>Propiedades id</td>
-                        <td>...</td>
+                        <td>&#60header> </td>
+                        <td>Representa el contenido inicial, generalmente en la parte superior de la pagina,
+                            puede contener el logo, titulo </td>
+                        <td><b>class e id:</b> permite asignar clases e identificadores a la etiqueta<br>
+                            <b>title:</b> descripciòn breve del elemento, aparece como ayuda al pasar el cursor sobre el elemento</td>
+                        <td>&#60header id="hprincipal"> <br>
+                            &#60h1>Lista de Etiquetas&$60/h1> <br>
+                            &#60/header> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&#60nav> </td>
+                        <td>Contiene enlaces principales de navegación, como los de un menú principal de un sitio web</td>
+                        <td><b>arial-label:</b> Proporciona un titulo descriptivo para la etiqueta<br>
+                            <b>class e id:</b> permite asignar clases e identificadores a la etiqueta</td>
+                        <td>&#60nav aria-label="Menú principal">
+                            &#60ul> &#60!-- Elementos de la lista de navegación--&#61
+                            &#60/ul>
+                            &#60/nav></td>
+                    </tr>
+                    <tr>
+                        <td>&#60h1> a &#60h6></td>
+                        <td>Se utilizan para definir encabezados en HTML </td>
+                        <td><b>lang:</b> se utiliza para especificar el idioma de un elemento <br>
+                            <b>dir:</b> se utiliza para especificar la dirección del texto. De izquierda a derecha (ltr) o de derecha a izquierda (rtl)  </td>
+                        <td> &#60header> <br>
+                            &#60h1>Lista de Etiquetas&#60/h1><br>
+                            Ejemplo: <h1>Lista de Etiquetas</h1>
+                            &#60h2 dir="rtl">Lista de Etiquetas&#60/h2><br>
+                            Ejemplo: <h2 dir="rtl">Lista de Etiquetas</h2>
+                            &#60/head> <br> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&#60Link></td>
+                        <td>Se utilizan para establecer relaciones y conexiones entre documentos HTML y recursos externos, como: CSS, fuentes web, etc. </td>
+                        <td><b>href:</b>se utiliza para indicar la URL del recurso externo que va a vincular al documento HTML<br>
+                            <b>rel:</b> define la relación entre el documento HTML y el recurso externo vinculado. Puede ser: stylesheet, icon, preconnect, dns-prefetch, preload, prefetch <br>
+                            <b>type:</b> especifica el tipo MIME del recurso externo <br>
+                            <b>media:</b>permite aplicar el recurso externo solo a ciertos medios o dispositivos, como pantallas, impresoras o dispositivos con características específicas.
+                        </td>
+                        <td> &#60head> <br>
+                            &#60link href ="src/css/tema.css" rel="stylesheet" media="screen" /> <br> 
+                            &#60/head> <br><br>
+                            Este ejemplo correspomde a la conexión actual de esta pagina con el CSS
+                        </td>
                     </tr>
                 </tbody>
             </table>
